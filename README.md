@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# hugging-face-demo2
-=======
 ---
 title: Demo
 emoji: 🌖
@@ -26,4 +23,3 @@ license: cc
 ## References
 
 [Watch YouTube Walkthrough](https://youtu.be/VYSGjUa5sc4)
->>>>>>> 1c2a1dd0d755b6b1398f4ab553b2ce9d84332dec
