@@ -14,6 +14,10 @@ jobs:
         with:
           fetch-depth: 0
       - name: Add remote 
-        run: git remote add space https://rimshaibrahim:@huggingface.co/spaces/rimshaibrahim/demo2
+        env:
+          HF: ${{ secrets.HF }}
+        run: git remote add space https://rimshaibrahim:${{ secrets.HF }}@huggingface.co/spaces/rimshaibrahim/demo2
       - name: Push to hub
-        run: git push --force https://rimshaibrahim:@huggingface.co/spaces/rimshaibrahim/demo2 main
+        env:
+          HF: ${{ secrets.HF }}
+        run: git push --force https://rimshaibrahim:${{ secrets.HF }}@huggingface.co/spaces/rimshaibrahim/demo2 main
